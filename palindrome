@@ -1,0 +1,17 @@
+fun main() {
+    val parole = arrayOf("gioco", "bicchiere", "frutta", "oro", "radar", "ombrello", "bottiglia", "ama")
+    val parole2 = arrayOf("")
+    var num = 0
+    for (parola in parole) {
+        val length = parola.length
+        var reverseString = ""
+        for (i in (length - 1) downTo 0) {
+            reverseString = reverseString + parola[i]
+        }
+        if (parola.equals(reverseString, ignoreCase = true)) {
+            parole2[num] = parola
+            println(parole2[num])
+    }
+    }
+    num++
+    }
